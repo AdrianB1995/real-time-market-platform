@@ -130,7 +130,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Download artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: ingestion-service-jar
       - name: Deploy ingestion-service
@@ -148,7 +148,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Download artifact
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v8
         with:
           name: processing-service-jar
       - name: Deploy processing-service
