@@ -75,13 +75,13 @@ jobs:
         run: ./gradlew :ingestion-service:test
       - name: Upload test reports
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: ingestion-service-test-reports
           path: ingestion-service/build/reports/tests/test/
       - name: Upload build artifacts
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: ingestion-service-jar
           path: ingestion-service/build/libs/
@@ -107,13 +107,13 @@ jobs:
         run: ./gradlew :processing-service:test
       - name: Upload test reports
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: processing-service-test-reports
           path: processing-service/build/reports/tests/test/
       - name: Upload build artifacts
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: processing-service-jar
           path: processing-service/build/libs/
