@@ -1,0 +1,4 @@
+rootProject.name = 'real-time-market-platform'
+
+include 'ingestion-service'
+include 'processing-service'

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: processing-service
+
+server:
+  port: 8082
+
+logging:
+  level:
+    root: INFO
+    com.example.processing: DEBUG
