@@ -19,10 +19,10 @@ public record MarketEvent (
         @Pattern(regexp = "^[A-Z]*$", message = "Symbol must contain only uppercase letters")
         String symbol,
 
-        @Min(value = 0, message = "Price must be greater than zero")
+        @Min(value = 1, message = "Price must be greater than zero")
         BigDecimal price,
 
-        @Min(value = 0, message = "Volume must not be negative")
+        @Min(value = 1, message = "Volume must not be negative")
         long volume,
 
         @NotNull

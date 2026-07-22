@@ -21,6 +21,12 @@ subprojects {
         implementation 'org.springframework.boot:spring-boot-starter-web:4.1.0'
         implementation 'org.springframework.boot:spring-boot-starter-actuator:4.1.0'
         implementation 'org.springframework.boot:spring-boot-starter-validation:4.1.0'
+
+        compileOnly("org.projectlombok:lombok:1.18.46")
+        annotationProcessor("org.projectlombok:lombok:1.18.46")
+
+        testCompileOnly("org.projectlombok:lombok:1.18.46")
+        testAnnotationProcessor("org.projectlombok:lombok:1.18.46")
         testImplementation 'org.springframework.boot:spring-boot-starter-test:4.1.0'
     }
 
