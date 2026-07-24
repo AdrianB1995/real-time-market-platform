@@ -1,1 +1,5 @@
 description = 'Ingestion Service Module'
+
+dependencies {
+    implementation project(':common-models')
+}

@@ -1,7 +1,7 @@
 package com.example.ingestion.controller;
 
 import com.example.ingestion.kafka.KafkaProducerService;
-import com.example.ingestion.models.MarketEvent;
+import com.example.common.models.MarketEvent;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class MarketEventController {
 
     @PostMapping("/market-events")
     public ResponseEntity<String> handleMarketEvent(@Valid @RequestBody MarketEvent marketEvent) {
-        kafkaProducerService.sendMessage("market-events", marketEvent.toString());
+        kafkaProducerService.sendMessage("market-events", marketEvent);
         return ResponseEntity.ok("Market event processed successfully");
     }
 }

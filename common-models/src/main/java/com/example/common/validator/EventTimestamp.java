@@ -1,4 +1,4 @@
-package com.example.ingestion.validator;
+package com.example.common.validator;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

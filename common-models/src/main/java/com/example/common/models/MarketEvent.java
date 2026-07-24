@@ -1,6 +1,6 @@
-package com.example.ingestion.models;
+package com.example.common.models;
 
-import com.example.ingestion.validator.EventTimestamp;
+import com.example.common.validator.EventTimestamp;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;

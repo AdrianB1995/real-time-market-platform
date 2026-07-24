@@ -1,1 +1,5 @@
 description = 'Processing Service Module'
+
+dependencies {
+    implementation project(':common-models')
+}
