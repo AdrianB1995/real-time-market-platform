@@ -168,7 +168,7 @@ docker volume inspect containers_kafka-data
 
 ## Configuration Details
 
-See `docker-compose.yml` for:
+See `kafka-docker-compose.yml` for:
 - Environment variables and broker settings
 - Network configuration
 - Volume mounting
