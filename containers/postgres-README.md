@@ -13,7 +13,7 @@ This directory contains the Docker Compose configuration for running PostgreSQL 
 From the `containers/` directory, run:
 
 ```bash
-docker-compose -f sql-docker-compose.yml up -d
+docker-compose -f postgres-docker-compose.yml up -d
 ```
 
 ### Verifying the Container
@@ -27,13 +27,13 @@ docker ps | grep postgres_db
 Or view logs:
 
 ```bash
-docker-compose -f sql-docker-compose.yml logs db
+docker-compose -f postgres-docker-compose.yml logs db
 ```
 
 ### Stopping the Container
 
 ```bash
-docker-compose -f sql-docker-compose.yml down
+docker-compose -f postgres-docker-compose.yml down
 ```
 
 ## Connection Information
@@ -254,7 +254,7 @@ For a GUI alternative to psql:
 
 ### pgAdmin (Web-based Administration)
 
-To add pgAdmin to manage PostgreSQL visually, add this to `sql-docker-compose.yml`:
+To add pgAdmin to manage PostgreSQL visually, add this to `postgres-docker-compose.yml`:
 
 ```yaml
   pgadmin:
@@ -277,7 +277,7 @@ Then access at `http://localhost:5050`
 
 **Check logs:**
 ```bash
-docker-compose -f sql-docker-compose.yml logs db
+docker-compose -f postgres-docker-compose.yml logs db
 ```
 
 **Common issues:**

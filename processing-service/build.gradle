@@ -2,4 +2,16 @@ description = 'Processing Service Module'
 
 dependencies {
     implementation project(':common-models')
+    
+    implementation 'org.springframework.boot:spring-boot-starter-kafka:4.1.0'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:4.1.0'
+    implementation 'org.springframework.boot:spring-boot-starter-json:4.1.0'
+    implementation 'org.postgresql:postgresql:42.7.11'
+    
+    compileOnly 'org.projectlombok:lombok:1.18.46'
+    annotationProcessor 'org.projectlombok:lombok:1.18.46'
+    
+    testCompileOnly 'org.projectlombok:lombok:1.18.46'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.46'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:4.1.0'
 }

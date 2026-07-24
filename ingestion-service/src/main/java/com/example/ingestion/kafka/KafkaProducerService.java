@@ -12,7 +12,7 @@ public class KafkaProducerService {
     private KafkaTemplate<String, MarketEvent> kafkaTemplate;
 
     public void sendMessage(String topic, MarketEvent message) {
-        kafkaTemplate.send(topic, String.valueOf(message.eventId()), message);
+        kafkaTemplate.send(topic, String.valueOf(message.getSymbol()), message);
         System.out.println("Published Message: " + message);
     }
 }
